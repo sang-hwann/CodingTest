@@ -5,6 +5,6 @@ package BaekJoon;
 
 public class HelloWorld_2557 {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Hello World!"); //문자 그대로 출력
     }
 }
