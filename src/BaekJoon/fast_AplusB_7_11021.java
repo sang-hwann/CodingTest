@@ -3,7 +3,7 @@ package BaekJoon;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class fast_AplusBminus7_11021 {
+public class fast_AplusB_7_11021 {
     public static void main(String[] args) throws IOException {
         //문자입력을 위한 buffer 객체 선언
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
