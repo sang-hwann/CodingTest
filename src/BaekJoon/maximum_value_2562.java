@@ -1,8 +1,26 @@
 package BaekJoon;
 
+import java.util.Scanner;
+
 public class maximum_value_2562 {
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in); //입력을 위한 scanner객체 선언
+        int[] numList = new int[9]; //9개의 문자가 들어가기때문에 9개의 배열크기지정
+        int maxValue = Integer.MIN_VALUE; // 최대값을 받을 변수 선언
+        int inputValue = 0; //현재 입력받은 값
+        int maxValueCount = 0;
+        //입력받을 9개 값 입력을 위해 반복분 적용
+        for (int i = 0; i < 9; i++) {
+            inputValue = scanner.nextInt(); //값입력
+            //현재값이 최대값보다 클 경우
+            if (inputValue > maxValue) {
+                maxValue = inputValue; //최대값 저장
+                maxValueCount = i+1; //최대값 순서저장
+            }
+        }
+        //최대값과 순서 출력
+        System.out.println(maxValue);
+        System.out.println(maxValueCount);
     }
 }
 
